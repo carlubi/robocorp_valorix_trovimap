@@ -1,0 +1,629 @@
+V 0.0.4
+T 2026-03-03T13:25:44.769+00:00
+ID 1|7bb0f12e-1704-11f1-b715-765cff8f4a04
+I "sys.platform=darwin"
+I "python=3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:42:11) [Clang 18.1.8 ]"
+M a:"tasks.py - index"
+SR a|0.012
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.013
+M f:"regular"
+M g:"\nCollecting task index from: /Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py\n"
+C f|g|0.014
+M h:"stderr"
+M i:"2026-03-03 14:25:46,081 - RPA.core.certificates - INFO - Truststore not in use, HTTPS traffic validated against `certifi` package. (requires Python 3.10.12 and 'pip' 23.2.1 at minimum)\n"
+C h|i|1.312
+M j:"PASS"
+ET j|e|16.929
+M l:"index"
+M m:"tasks"
+M n:"/Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py"
+M o:"\n    Main task which solves the RPA challenge!\n\n    Downloads the source data Excel file and uses Playwright to fill the entries inside\n    rpachallenge.com.\n    "
+P k:l|m|n|o|14
+ST k|16.929
+M p:"================================ "
+C f|p|16.929
+M q:"Running: "
+C f|q|16.929
+M r:"task_name"
+C r|l|16.93
+M s:" ================================\n"
+C f|s|16.93
+M t:"METHOD"
+SE k|t|16.931
+M v:"configure"
+M w:"robocorp.browser"
+M x:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/browser/__init__.py"
+P u:v|w|x|e|25
+SE u|t|16.931
+M y:"kwargs"
+M z:"dict"
+M A:"{'browser_engine': 'chromium', 'screenshot': 'only-on-failure'}"
+EA y|z|A
+EE t|j|16.938
+P B:l|m|n|e|27
+M C:"date_today"
+M D:"str"
+M E:"'03/03/2026'"
+AS B|C|D|E|16.939
+M G:"Inputs.current"
+M H:"robocorp.workitems"
+M I:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/workitems/__init__.py"
+P F:G|H|I|e|88
+SE F|t|16.939
+M J:"Work items input path not defined, to simulate different input values set the\nenvironment variable `RC_WORKITEM_INPUT_PATH`.\n\nGenerated input path: /Users/carlubi/Desktop/robocorp_valorix_trovimap/output/work-items-in/workitems.json\n\n"
+C h|J|16.941
+P K:G|H|I|e|90
+M L:"Input"
+M M:"Input[id=0,payload=null,files=[],state=None,saved=True]"
+R K|L|M|16.942
+EE t|j|16.942
+P N:l|m|n|e|30
+M O:"wi"
+AS N|O|L|M|16.942
+M Q:"WorkItem.payload"
+M R:"robocorp.workitems._workitem"
+M S:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/workitems/_workitem.py"
+P P:Q|R|S|e|53
+SE P|t|16.942
+P T:Q|R|S|e|55
+M U:"NoneType"
+M V:"None"
+R T|U|V|16.942
+EE t|j|16.943
+P W:l|m|n|e|31
+M X:"raw"
+AS W|X|U|V|16.943
+M Z:"else (to if isinstance(raw, str))"
+P Y:Z|m|n|e|34
+M 0:"ELSE_SCOPE"
+SE Y|0|16.943
+M 1:"isinstance"
+M 2:"builtin_function_or_method"
+M 3:"<built-in function isinstance>"
+EA 1|2|3
+EA X|U|V
+M 4:"type"
+M 5:"<class 'str'>"
+EA D|4|5
+P 6:l|m|n|e|37
+M 7:"payload"
+M 8:"{}"
+AS 6|7|z|8|16.943
+EE 0|j|16.943
+P 9:l|m|n|e|39
+M aa:"catastro_id"
+AS 9|aa|U|V|16.943
+P ab:l|m|n|e|40
+M ac:"supabase_id"
+AS ab|ac|U|V|16.943
+M ad:"stdout"
+M ae:"OK:"
+C ad|ae|16.944
+M af:" "
+C ad|af|16.944
+C ad|V|16.944
+C ad|af|16.944
+C ad|V|16.944
+M ag:"\n"
+C ad|ag|16.944
+M ah:"Today's date: 03/03/2026"
+C ad|ah|16.944
+C ad|ag|16.945
+M ai:"Catastro ID: None"
+C ad|ai|16.945
+C ad|ag|16.945
+M ak:"Vault.__init__"
+M al:"RPA.Robocorp.Vault"
+M am:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/RPA/Robocorp/Vault.py"
+P aj:ak|al|am|e|568
+SE aj|t|16.945
+M an:"args"
+M ao:"tuple"
+M ap:"()"
+EA an|ao|ap
+EA y|z|8
+EE t|j|16.946
+P aq:l|m|n|e|48
+M ar:"vault"
+M as:"Vault"
+M at:"<RPA.Robocorp.Vault.Vault object at 0x10c164ec0>"
+AS aq|ar|as|at|16.946
+M av:"Vault.get_secret"
+P au:av|al|am|e|611
+SE au|t|16.947
+M aw:"secret_name"
+M ax:"'valorix'"
+EA aw|D|ax
+P ay:av|al|am|e|617
+M az:"Secret"
+M aA:"Secret(name=valorix, keys=[USUARIO_PENOTARIADO, PASS_PENOTARIADO, USUARIO_CATASTRO, SOPORTE_CATASTRO, TROVIMAP_EMAIL, TROVIMAP_PASSWORD])"
+R ay|az|aA|17.77
+EE t|j|17.77
+P aB:l|m|n|e|49
+M aC:"cred"
+AS aB|aC|az|aA|17.77
+P aD:l|m|n|e|50
+M aE:"usuario_catastro"
+M aF:"'48214335X'"
+AS aD|aE|D|aF|17.77
+P aG:l|m|n|e|51
+M aH:"soporte_catastro"
+M aI:"'BOF172857'"
+AS aG|aH|D|aI|17.77
+P aJ:l|m|n|e|52
+M aK:"email_trovimap"
+M aL:"'info@hogava.com'"
+AS aJ|aK|D|aL|17.77
+P aM:l|m|n|e|53
+M aN:"password_trovimap"
+M aO:"<redacted>"
+AS aM|aN|D|aO|17.771
+M aP:"Starting automation..."
+C ad|aP|17.773
+C ad|ag|17.773
+M aQ:"An error occurred: name 'login_catastro' is not defined"
+C ad|aQ|17.773
+C ad|ag|17.774
+M aR:"Automation finished!"
+C ad|aR|17.774
+C ad|ag|17.774
+M aS:"NameError: name 'login_catastro' is not defined"
+STB aS|17.774
+M aT:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/tasks/_task.py"
+M aU:"run"
+M aV:"return self.method(**kwargs)"
+TBE aT|57|aU|aV
+M aW:"self"
+M aX:"Task"
+M aY:"Task(index, status: Status.NOT_RUN)"
+TBV aW|aX|aY
+TBV y|z|8
+M aZ:"sig"
+M a0:"Signature"
+M a1:"<Signature ()>"
+TBV aZ|a0|a1
+M a2:"raise e"
+TBE n|82|l|a2
+TBV C|D|E
+TBV O|L|M
+TBV X|U|V
+TBV 7|z|8
+TBV aa|U|V
+TBV ac|U|V
+TBV ar|as|at
+TBV aC|az|aA
+TBV aE|D|aF
+TBV aH|D|aI
+TBV aK|D|aL
+TBV aN|D|aO
+M a3:"login_catastro(usuario_catastro, soporte_catastro)"
+TBE n|59|l|a3
+TBV C|D|E
+TBV O|L|M
+TBV X|U|V
+TBV 7|z|8
+TBV aa|U|V
+TBV ac|U|V
+TBV ar|as|at
+TBV aC|az|aA
+TBV aE|D|aF
+TBV aH|D|aI
+TBV aK|D|aL
+TBV aN|D|aO
+ETB 17.775
+M a4:"UnboundLocalError: cannot access local variable 'data_catastro' where it is not associated with a value (this exception occurred during handling of the previous exception)"
+STB a4|17.775
+TBE aT|57|aU|aV
+TBV aW|aX|aY
+TBV y|z|8
+TBV aZ|a0|a1
+M a5:"data_catastro = data_catastro if data_catastro else {}"
+TBE n|85|l|a5
+TBV C|D|E
+TBV O|L|M
+TBV X|U|V
+TBV 7|z|8
+TBV aa|U|V
+TBV ac|U|V
+TBV ar|as|at
+TBV aC|az|aA
+TBV aE|D|aF
+TBV aH|D|aI
+TBV aK|D|aL
+TBV aN|D|aO
+ETB 17.776
+M a6:"ERROR"
+EE t|a6|17.776
+C r|l|17.778
+M a7:" status: "
+C f|a7|17.778
+M a8:"error"
+M a9:"FAIL\n"
+C a8|a9|17.778
+M ba:"\ncannot access local variable 'data_catastro' where it is not associated with a value\n"
+C a8|ba|17.778
+M bb:"======================== "
+C f|bb|17.778
+M bc:"Full Traceback (running "
+C f|bc|17.778
+C r|l|17.779
+M bd:")"
+C f|bd|17.779
+M be:" ========================\n"
+C f|be|17.779
+M bf:"traceback"
+M bg:"Traceback (most recent call last):\n  File \"/Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py\", line 82, in index\n    raise e\n  File \"/Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py\", line 59, in index\n    login_catastro(usuario_catastro, soporte_catastro)\n    ^^^^^^^^^^^^^^\nNameError: name 'login_catastro' is not defined\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/tasks/_commands.py\", line 453, in run\n    result = task.run(**kwargs)\n             ^^^^^^^^^^^^^^^^^^\n  File \"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/tasks/_task.py\", line 57, in run\n    return self.method(**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py\", line 85, in index\n    data_catastro = data_catastro if data_catastro else {}\n                                     ^^^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'data_catastro' where it is not associated with a value\n\n"
+C bf|bg|17.785
+M bh:"================================================================================\n"
+C f|bh|17.785
+M bi:"FAIL"
+M bj:"cannot access local variable 'data_catastro' where it is not associated with a value"
+ET bi|bj|17.785
+M bl:"Teardown tasks"
+M bm:"teardown"
+P bk:bl|bm|e|e|0
+ST bk|17.786
+M bn:"Process snapshot"
+SPS bn|17.787
+M bo:"System information:\nMemory: Total: 16.0 G, Available: 657.2 M, Used: 96.0 %\nCPUs: 10"
+P bp:e|e|e|e|0
+L I|bo|bp|0|18.243
+M bq:"Current Process: python3.12 (pid: 10492, status: running)\nCommand Line: /Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/bin/python3 -X frozen_modules=off /Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy --connect 127.0.0.1:62537 --configure-qt none --adapter-access-token 9c4475335d9c2fd2900fedb45b1a223d9795bf105528d03b4127944569d5ce9a -m robocorp.tasks run /Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py -t index\nStarted: 14:25:34\nParent pid: 10483\nResident Set Size: 159.9 M\nVirtual Memory Size: 33.7 G"
+L I|bq|bp|0|18.254
+M br:"OutputToPortThread|Thread ID: 13011984384 (daemon)"
+STD br|18.254
+M bs:"/Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py"
+M bt:"__call__"
+M bu:"ret = self.original_func(*self.args, **self.kwargs)"
+TBE bs|1134|bt|bu
+M bv:"_NewThreadStartupWithTrace"
+M bw:"<_pydev_bundle.pydev_monkey._NewThreadStartupWithTrace object at 0x10c151070>"
+TBV aW|bv|bw
+M bx:"py_db"
+M by:"PyDB"
+M bz:"<pydevd.PyDB object at 0x10ad8f6b0>"
+TBV bx|by|bz
+M bA:"thread_id"
+M bB:"'pid_10492_id_4497017984'"
+TBV bA|D|bB
+M bC:"t"
+M bD:"Thread"
+M bE:"<Thread(OutputToPortThread, started daemon 13011984384)>"
+TBV bC|bD|bE
+M bF:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/threading.py"
+M bG:"_bootstrap"
+M bH:"self._bootstrap_inner()"
+TBE bF|1032|bG|bH
+TBV aW|bD|bE
+M bI:"_bootstrap_inner"
+M bJ:"self.run()"
+TBE bF|1075|bI|bJ
+TBV aW|bD|bE
+M bK:"self._target(*self._args, **self._kwargs)"
+TBE bF|1012|aU|bK
+TBV aW|bD|bE
+M bL:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/tasks/_log_output_setup.py"
+M bM:"write_in_thread"
+M bN:"msg = q.get()"
+TBE bL|73|bM|bN
+M bO:"msg"
+M bP:"'ST bk|17.774\\n'"
+TBV bO|D|bP
+M bQ:"client_socket"
+M bR:"socket"
+M bS:"<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 62555), raddr=('127.0.0.1', 62434)>"
+TBV bQ|bR|bS
+M bT:"log"
+M bU:"module"
+M bV:"<module 'robocorp.log' from '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/__init__.py'>"
+TBV bT|bU|bV
+M bW:"port_in_env"
+M bX:"'62434'"
+TBV bW|D|bX
+M bY:"q"
+M bZ:"Queue"
+M b0:"<queue.Queue object at 0x109f67e60>"
+TBV bY|bZ|b0
+M b1:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/queue.py"
+M b2:"get"
+M b3:"self.not_empty.wait()"
+TBE b1|171|b2|b3
+TBV aW|bZ|b0
+M b4:"block"
+M b5:"bool"
+M b6:"True"
+TBV b4|b5|b6
+M b7:"timeout"
+TBV b7|U|V
+M b8:"wait"
+M b9:"waiter.acquire()"
+TBE bF|355|b8|b9
+M ca:"Condition"
+M cb:"<Condition(<unlocked _thread.lock object at 0x10c38a280>, 1)>"
+TBV aW|ca|cb
+TBV b7|U|V
+M cc:"waiter"
+M cd:"lock"
+M ce:"<locked _thread.lock object at 0x110c5d200>"
+TBV cc|cd|ce
+M cf:"saved_state"
+TBV cf|U|V
+M cg:"gotit"
+M ch:"False"
+TBV cg|b5|ch
+ETD 18.257
+M ci:"pydevd.CheckAliveThread|Thread ID: 12995194880 (non daemon)"
+STD ci|18.257
+TBE bF|1032|bG|bH
+M cj:"CheckAliveThread"
+M ck:"<CheckAliveThread(pydevd.CheckAliveThread, started 12995194880)>"
+TBV aW|cj|ck
+TBE bF|1075|bI|bJ
+TBV aW|cj|ck
+M cl:"/Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_daemon_thread.py"
+M cm:"self._on_run()"
+TBE cl|53|aU|cm
+TBV aW|cj|ck
+M cn:"created_pydb_daemon"
+M co:"{<WriterThread(pydevd.Writer, started daemon 12944826368)>: 1, <ReaderThread(pydevd.Reader, started daemon 12961615872)>: 1, <PyDBCommandThread(pydevd.CommandThread, started daemon 12978405376)>: 1, <CheckAliveThread(pydevd.CheckAliveThread, started 12995194880)>: 1}"
+TBV cn|z|co
+M cp:"/Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py"
+M cq:"_on_run"
+M cr:"self._wait_event.wait(TIMEOUT_SLOW)"
+TBE cp|325|cq|cr
+TBV aW|cj|ck
+M cs:"can_exit"
+M ct:"function"
+M cu:"<function CheckAliveThread._on_run.<locals>.can_exit at 0x10c1e16c0>"
+TBV cs|ct|cu
+TBV bx|by|bz
+M cv:"signaled = self._cond.wait(timeout)"
+TBE bF|655|b8|cv
+M cw:"Event"
+M cx:"<threading.Event at 0x10ad8fa40: unset>"
+TBV aW|cw|cx
+M cy:"float"
+M cz:"0.2"
+TBV b7|cy|cz
+M cA:"signaled"
+TBV cA|b5|ch
+M cB:"gotit = waiter.acquire(True, timeout)"
+TBE bF|359|b8|cB
+M cC:"<Condition(<unlocked _thread.lock object at 0x10bffb380>, 1)>"
+TBV aW|ca|cC
+TBV b7|cy|cz
+M cD:"<locked _thread.lock object at 0x10c1279c0>"
+TBV cc|cd|cD
+TBV cf|U|V
+TBV cg|b5|ch
+ETD 18.26
+M cE:"pydevd.CommandThread|Thread ID: 12978405376 (daemon)"
+STD cE|18.26
+TBE bF|1032|bG|bH
+M cF:"PyDBCommandThread"
+M cG:"<PyDBCommandThread(pydevd.CommandThread, started daemon 12978405376)>"
+TBV aW|cF|cG
+TBE bF|1075|bI|bJ
+TBV aW|cF|cG
+TBE cl|53|aU|cm
+TBV aW|cF|cG
+TBV cn|z|co
+M cH:"self._py_db_command_thread_event.wait(TIMEOUT_SLOW)"
+TBE cp|279|cq|cH
+TBV aW|cF|cG
+TBE bF|655|b8|cv
+M cI:"<threading.Event at 0x10ab730e0: unset>"
+TBV aW|cw|cI
+TBV b7|cy|cz
+TBV cA|b5|ch
+TBE bF|359|b8|cB
+M cJ:"<Condition(<unlocked _thread.lock object at 0x10bff8700>, 1)>"
+TBV aW|ca|cJ
+TBV b7|cy|cz
+M cK:"<locked _thread.lock object at 0x10c127980>"
+TBV cc|cd|cK
+TBV cf|U|V
+TBV cg|b5|ch
+ETD 18.261
+M cL:"pydevd.Reader|Thread ID: 12961615872 (daemon)"
+STD cL|18.261
+TBE bF|1032|bG|bH
+M cM:"ReaderThread"
+M cN:"<ReaderThread(pydevd.Reader, started daemon 12961615872)>"
+TBV aW|cM|cN
+TBE bF|1075|bI|bJ
+TBV aW|cM|cN
+TBE cl|53|aU|cm
+TBV aW|cM|cN
+TBV cn|z|co
+M cO:"/Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_comm.py"
+M cP:"line = self._read_line()"
+TBE cO|245|cq|cP
+TBV aW|cM|cN
+M cQ:"content_len"
+M cR:"int"
+M cS:"-1"
+TBV cQ|cR|cS
+M cT:"line"
+M cU:"bytes"
+M cV:"b'\\r\\n'"
+TBV cT|cU|cV
+M cW:"json_contents"
+M cX:"b'{\"seq\": 12, \"type\": \"request\", \"command\": \"threads\"}'"
+TBV cW|cU|cX
+M cY:"_read_line"
+M cZ:"r = self.sock.recv(1024)"
+TBE cO|227|cY|cZ
+TBV aW|cM|cN
+M c0:"i"
+TBV c0|cR|cS
+ETD 18.263
+M c1:"pydevd.Writer|Thread ID: 12944826368 (daemon)"
+STD c1|18.265
+TBE bF|1032|bG|bH
+M c2:"WriterThread"
+M c3:"<WriterThread(pydevd.Writer, started daemon 12944826368)>"
+TBV aW|c2|c3
+TBE bF|1075|bI|bJ
+TBV aW|c2|c3
+TBE cl|53|aU|cm
+TBV aW|c2|c3
+TBV cn|z|co
+M c4:"cmd = self._cmd_queue.get(True, 0.1)"
+TBE cO|390|cq|c4
+TBV aW|c2|c3
+M c5:"cmd"
+M c6:"NetCommand"
+M c7:"<_pydevd_bundle.pydevd_net_command.NetCommand object at 0x111809250>"
+TBV c5|c6|c7
+M c8:"self.not_empty.wait(remaining)"
+TBE b1|180|b2|c8
+M c9:"<queue.Queue object at 0x109f43470>"
+TBV aW|bZ|c9
+TBV b4|b5|b6
+M da:"0.1"
+TBV b7|cy|da
+M db:"endtime"
+M dc:"241752.858148584"
+TBV db|cy|dc
+M dd:"remaining"
+M de:"0.0999993339937646"
+TBV dd|cy|de
+TBE bF|359|b8|cB
+M df:"<Condition(<unlocked _thread.lock object at 0x10bffbe80>, 1)>"
+TBV aW|ca|df
+TBV b7|cy|de
+M dg:"<locked _thread.lock object at 0x10d646fc0>"
+TBV cc|cd|dg
+TBV cf|U|V
+TBV cg|b5|ch
+ETD 18.269
+M dh:"MainThread|Thread ID: 8607534656 (non daemon)"
+STD dh|18.269
+M di:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/__init__.py"
+M dj:"process_snapshot"
+M dk:"robo_logger.process_snapshot()"
+TBE di|268|dj|dk
+M dl:"logger_instances"
+M dm:"{<robocorp.log._robo_logger._RoboLogger object at 0x10c0b6600>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x10c0ad3a0>: 1}"
+TBV dl|z|dm
+M dn:"robo_logger"
+M do:"_RoboLogger"
+M dp:"<robocorp.log._robo_logger._RoboLogger object at 0x10c0b6600>"
+TBV dn|do|dp
+M dq:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_logger.py"
+M dr:"new_func"
+M ds:"return func(self, *args, **kwargs)"
+TBE dq|20|dr|ds
+TBV aW|do|dp
+TBV an|ao|ap
+TBV y|z|8
+M dt:"func"
+M du:"<function _RoboLogger.process_snapshot at 0x10c248a40>"
+TBV dt|ct|du
+M dv:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE dq|416|dj|dv
+TBV aW|do|dp
+M dw:"hide_vars"
+TBV dw|b5|ch
+M dx:"/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_output_impl.py"
+M dy:"self._dump_threads(hide_vars)"
+TBE dx|747|dj|dy
+M dz:"_RoboOutputImpl"
+M dA:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x10abe2000>"
+TBV aW|dz|dA
+TBV dw|b5|ch
+TBV bT|bU|bV
+M dB:"entry_id"
+M dC:"'ps_2'"
+TBV dB|D|dC
+M dD:"entry_type"
+M dE:"'process_snapshot'"
+TBV dD|D|dE
+M dF:"psutil"
+M dG:"<module 'psutil' from '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/psutil/__init__.py'>"
+TBV dF|bU|dG
+M dH:"AccessDenied"
+M dI:"<class 'psutil.AccessDenied'>"
+TBV dH|4|dI
+M dJ:"NoSuchProcess"
+M dK:"<class 'psutil.NoSuchProcess'>"
+TBV dJ|4|dK
+M dL:"ZombieProcess"
+M dM:"<class 'psutil.ZombieProcess'>"
+TBV dL|4|dM
+M dN:"curr_process"
+M dO:"Process"
+M dP:"psutil.Process(pid=10492, name='python3.12', status='running', started='14:25:34')"
+TBV dN|dO|dP
+M dQ:"log_info"
+M dR:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x10adf6520>"
+TBV dQ|ct|dR
+M dS:"memory_info"
+M dT:"'Total: 16.0 G, Available: 657.2 M, Used: 96.0 %'"
+TBV dS|D|dT
+M dU:"child_i"
+M dV:"0"
+TBV dU|cR|dV
+M dW:"child"
+TBV dW|dO|dP
+M dX:"name"
+M dY:"'python3.12'"
+TBV dX|D|dY
+M dZ:"status"
+M d0:"'running'"
+TBV dZ|D|d0
+M d1:"create_time"
+M d2:"'14:25:34'"
+TBV d1|D|d2
+M d3:"ppid"
+M d4:"'10483'"
+TBV d3|D|d4
+M d5:"cmdline"
+M d6:"'/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/bin/python3 -X frozen_modules=off /Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy --connect 127.0.0.1:62537 --configure-qt none --adapter-access-token 9c4475335d9c2fd2900fedb45b1a223d9795bf105528d03b4127944569d5ce9a -m robocorp.tasks run /Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py -t index'"
+TBV d5|D|d6
+M d7:"rss"
+M d8:"'159.9 M'"
+TBV d7|D|d8
+M d9:"vms"
+M ea:"'33.7 G'"
+TBV d9|D|ea
+M eb:"proc_memory_info"
+M ec:"pmem"
+M ed:"pmem(rss=167698432, vms=36141203456, pfaults=95727, pageins=509)"
+TBV eb|ec|ed
+M ee:"message"
+M ef:"'Current Process: python3.12 (pid: 10492, status: running)\\nCommand Line: /Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/bin/python3 -X frozen_modules=off /Users/carlubi/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy --connect 127.0.0.1:62537 --configure-qt none --adapter-access-token 9c4475335d9c2fd2900fedb45b1a223d9795bf105528d03b4127944569d5ce9a -m robocorp.tasks run /Users/carlubi/Desktop/robocorp_valorix_trovimap/tasks.py -t index\\nStarted: 14:25:34\\nParent pid: 10483\\nResident Set Size: 159.9 M\\nVirtual Memory Size: 33.7 G'"
+TBV ee|D|ef
+M eg:"_dump_threads"
+M eh:"stack.append((f, f.f_lineno))"
+TBE dx|768|eg|eh
+TBV aW|dz|dA
+TBV dw|b5|ch
+M ei:"8607534656"
+TBV bA|cR|ei
+M ej:"frame"
+M ek:"<frame at 0x112616df0, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_output_impl.py', line 772, code _dump_threads>"
+TBV ej|ej|ek
+M el:"thread"
+M em:"_MainThread"
+M en:"<_MainThread(MainThread, started 8607534656)>"
+TBV el|em|en
+M eo:"title"
+M ep:"'MainThread|Thread ID: 8607534656 (non daemon)'"
+TBV eo|D|ep
+M eq:"f"
+M er:"<frame at 0x7f8419a2a470, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/tasks/_commands.py', line 494, code run>"
+TBV eq|ej|er
+M es:"stack"
+M et:"list"
+M eu:"[(<frame at 0x10c58cad0, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/__init__.py', line 268, code process_snapshot>, 268), (<frame at 0x112635e00, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x112640d00, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x1125b2d40, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_output_impl.py', line 747, code process_snapshot>, 747), (<frame at 0x112616df0, file '/Users/Shared/robocorp/ht/22bf795_b1f3c24_1c0bc041/lib/python3.12/site-packages/robocorp/log/_robo_output_impl.py', line 772, code _dump_threads>, 768)]"
+TBV es|et|eu
+ETD 18.273
+EPS 18.273
+ET j|e|18.287
+ER a6|18.29
