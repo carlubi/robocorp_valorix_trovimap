@@ -33,6 +33,7 @@ def index():
 
     catastro_id = payload.get("catastro_id")
     supabase_id = payload.get("supabase_id")
+    m2 = payload.get("m2")
 
     print("OK:", catastro_id, supabase_id)
 
@@ -47,7 +48,7 @@ def index():
     print("Starting automation...")
 
     try:
-        valoracion_url, precio_mercado_estimado = trovimap_valoracion(email_trovimap, password_trovimap, catastro_id)
+        valoracion_url, precio_mercado_estimado = trovimap_valoracion(email_trovimap, password_trovimap, catastro_id, m2)
         
         workitems.outputs.create(
             payload={
@@ -71,7 +72,7 @@ def index():
 
 
 # Trovimap
-def trovimap_valoracion(email, password, catastral):
+def trovimap_valoracion(email, password, catastral, m2):
     """
     Login en Trovimap y lanzamiento de una valoracion de vivienda.
     """
@@ -192,7 +193,14 @@ def trovimap_valoracion(email, password, catastral):
 
     page.wait_for_timeout(1500)
 
-    # Paso 10: clicar "Valorar" en el footer del modal
+    # Paso 10: rellenar "Superficie Vivienda" con el valor de m2
+    living_area_input = page.locator("#livingArea")
+    living_area_input.wait_for(state="visible", timeout=10000)
+    living_area_input.click()
+    living_area_input.fill(str(m2))
+    print(f"Superficie Vivienda rellenada con: {m2}")
+
+    # Paso 11: clicar "Valorar" en el footer del modal
     _click_first(
         page,
         [
@@ -207,6 +215,7 @@ def trovimap_valoracion(email, password, catastral):
 
     page.wait_for_load_state("domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
+
     valoracion_url = page.url
     precio_mercado_estimado = _extract_precio_mercado_estimado(page)
 
@@ -217,6 +226,7 @@ def trovimap_valoracion(email, password, catastral):
     }
     print(f"Resultado Trovimap: {resultado}")
     return valoracion_url, precio_mercado_estimado
+
 
 def _click_first(page, selectors, description, timeout=7000):
     last_error = None

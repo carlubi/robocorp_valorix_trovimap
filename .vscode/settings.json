@@ -1,1 +1,5 @@
-{}
+{
+    "python.analysis.extraPaths": [
+        "/Users/carlubi/Desktop/robocorp_valorix_trovimap/."
+    ]
+}
